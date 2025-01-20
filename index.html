@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Азимут</title>
+	<style>
+		* {margin: 0px; padding: 0px; color: white; font-family: Tahoma; font-size: 30px;}
+		body{background-color: snow;}
+		form{text-align: center; display: flex; flex-direction:column; justify-content: space-between; box-sizing: border-box;}
+		input::placeholder{color: white}
+		header{background-image: url("header.png");width: 1440px;height: 648px;}
+		footer{background-image: url('F2.png'); width: 1440px; height: 416px; font-size: 25px; padding-top: 40px; padding-left: 70px;}
+		#orders{width: 1440px; height: 582px;}
+		#table{width: 1440px; height: 610px;}
+		#reg{width: 1440px; height: 1418px;}
+		.j{width: 250px; height: 60px;  float: right; margin-top: 20px; margin-right: 70px; }
+		.jakor{background-image: url("RJ.png"); width: 1440px; height: 72px;  padding-top: 14px; padding-left: 30px; box-sizing: border-box;}
+		.B1{width: 250px; height:60px; float: left; background-image: url("R1.png")}
+		.B2{width: 337px; height:78px; float: left; background-image: url("RB.png")}
+		#plane{position: relative; margin-left: 830px; margin-top: -125px;}
+		#ordersF{position: relative; margin-left: 250px; margin-top: 70px; background-image: url("F1.png"); width: 921px; height: 372px; padding: 50px;}
+		#regF{position: relative; margin-left: 100px; margin-top: 70px; background-image: url("F2.png"); width: 1200px; height: 1062px; padding: 98px;}
+		.I1{background-image: url("I1.png"); width: 754px; height: 64px;}
+		.I2{background-image: url("I2.png"); width: 1000px; height: 80px; margin-top: 8px;}
+		.text {position: relative; top: 8px; left: 14px;}
+	</style>
+</head>
+<body>
+	<header>
+		<a href = "#reg"><div class = "j" style = "background-image: url('R3.png');"><p class="text">Оформить заказ</p></div></a>
+		<a href = "#table"><div class = "j" style = "background-image: url('R2.png');"><p class="text">Онлайн-табло</p></div></a>
+		<a href = "#orders"><div class = "j" style = "background-image: url('R1.png');"><p class="text">Поиск заказов</p></div></a>
+	</header>
+	<div id = "orders">
+		<p class = "jakor">ПОИСК ЗАКАЗОВ</p> 
+		<form id = "ordersF" onsubmit = "alert('Запрос на розыск заказа отправлен')">
+			<input class = "I1" type = "number" placeholder="Номер брони">
+			<input class = "I1"	type = "text" placeholder="ФИО пассажира">
+			<input type = "submit" value = "Найти" class = "B1">
+		</form>
+		<img id = "plane" src = "plane.png">
+	</div>
+	<div id = "table">
+		<p class = "jakor">ОНЛАЙН-ТАБЛО</p>
+		<img style = "position: relative; left: 150px; top: 70px;" src = "T.png">
+	</div>
+	<div id = "reg">
+		<p class = "jakor">ОФОРМЛЕНИЕ ЗАКАЗА ОНЛАЙН</p>
+		<form id = "regF" onsubmit = "alert('Форма успешно отправлена')">
+			<input class = "I2" type = "text" placeholder = "Введите имя">
+			<input class = "I2" type = "text" placeholder = "Введите фамилию">
+			<input class = "I2" type = "date" placeholder = "Укажите дату рождения">
+			<input class = "I2" type = "text" placeholder = "Откуда">
+			<input class = "I2" type = "text" placeholder = "Куда">
+			<input class = "I2" type = "text" placeholder = "Дата вылета">
+			<input class = "I2" type = "text" placeholder = "Время вылета">
+			<input class = "I2" type = "email" placeholder = "Ваш e-mail">
+			<input class = "I2" type = "text" placeholder = "Ваш телефон"><br>
+			<div style = "display: flex; justify-content: space-between;"><input type = "submit" class = "B2">
+			<input type = "reset" value = "Очистить" class = "B2"></div>
+		</form>
+	</div>
+	<footer>
+		<img src="LOGO.png" style="float: right; margin-right: 90px;">
+		<p style = "font-size: 25px;">2017 — 2021 © Azimuth.<br>Все права защищены</p>
+		<img src="PM.png" style="position: relative; top:30px; ">
+	</footer>
+</body>
+</html>
